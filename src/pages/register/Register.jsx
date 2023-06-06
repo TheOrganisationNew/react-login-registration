@@ -1,8 +1,11 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
+import { FaUser, FaLock, FaEnvelope } from "react-icons/fa";
+import { MdEvent } from "react-icons/md";
 import imgSayit from "../../../img/img-sayit.svg";
 import "./register.scss";
 
-export const Register = (props) => {
+export const Register = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -23,12 +26,12 @@ export const Register = (props) => {
             
             <h1 className="register__title">Create Account</h1>
             <div class="register__box">
-              <i class="bx bx-user register__icon"></i>
+            <FaUser className="login__icon" />
               <input value={username} onChange={(e) => 
               setUsername(e.target.value)} type="text" placeholder="Username" class="register__input" />
             </div>
             <div className="register__box">
-              <i className="bx bx-user register__icon"></i>
+            <FaEnvelope className="login__icon" />
               <input
                 className="register__input"
                 value={email}
@@ -38,10 +41,11 @@ export const Register = (props) => {
               />
             </div>
             <div class="register__box">
+            <MdEvent className="login__icon" />
             <input className="register__input" value = {birthday} onChange={(e) => setBirthday(e.target.value)} type="date" placeholder="Date of birth" />
             </div>
             <div className="register__box">
-              <i className="bx bx-lock register__icon"></i>
+            <FaLock className="login__icon" />
               <input
               className="register__input"
                 value={password}
@@ -57,12 +61,11 @@ export const Register = (props) => {
               <span className="register__account">
                 Do you have an Account?
               </span>
-              <button
-                className="register__signin"
-                onClick={() => props.onFormSwitch("login")}
-              >
+              <Link to="/login">
+              <button className="register__signin">
                 Sign in
               </button>
+              </Link>
             </div>
           </form>
         </div>
