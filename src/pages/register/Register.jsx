@@ -30,6 +30,7 @@ export const Register = (props) => {
             <div className="register__box">
               <i className="bx bx-user register__icon"></i>
               <input
+                className="register__input"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 type="email"
@@ -37,11 +38,12 @@ export const Register = (props) => {
               />
             </div>
             <div class="register__box">
-            <input  value = {birthday} onChange={(e) => setBirthday(e.target.value)} type="date" placeholder="Date of birth" />
+            <input className="register__input" value = {birthday} onChange={(e) => setBirthday(e.target.value)} type="date" placeholder="Date of birth" />
             </div>
             <div className="register__box">
               <i className="bx bx-lock register__icon"></i>
               <input
+              className="register__input"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 type="password"
@@ -52,11 +54,11 @@ export const Register = (props) => {
               Sign Up
             </button>
             <div>
-              <span className="login__account">
+              <span className="register__account">
                 Do you have an Account?
               </span>
               <button
-                className="login__signin"
+                className="register__signin"
                 onClick={() => props.onFormSwitch("login")}
               >
                 Sign in

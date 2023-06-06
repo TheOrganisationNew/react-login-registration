@@ -134,7 +134,7 @@ img {
   color: var(--first-color);
 }
 
-.input {
+.login__input {
   border: none;
   outline: none;
   font-size: var(--normal-font-size);
@@ -142,7 +142,7 @@ img {
   color: var(--first-color-dark);
 }
 
-.input::placeholder {
+.login__input::placeholder {
   font-size: var(--normal-font-size);
   font-family: var(--body-font);
   color: var(--first-color-light);
@@ -160,7 +160,7 @@ img {
 
 .thisbutton{
   width: 50%;
-  border-radius: 10px;
+  border-color: #4481eb;
   padding: 1rem;
   margin: 2rem 0;
   color: #ffffff;
@@ -201,7 +201,12 @@ img {
   color: var(--first-color-dark);
 }
 
-.login__signin,
+.login__signin{
+  border: none;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
 .login__signup {
   color: var(--first-color);
   cursor: pointer;

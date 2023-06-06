@@ -19,14 +19,14 @@ export const Login = (props) => {
         </div>
         <div className="login__forms">
           <form action=""className="login__register" id="login-in" onSubmit={handleSubmit}>
-              <h1 className="login__title">Sign In</h1>
+              <h1 className="login__title">Login to Account</h1>
               <div className="login__box">
                 <i className="bx bx-user login__icon"></i>
-                <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@example.com"/>
+                <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@example.com" className="login__input"/>
               </div>
               <div className="login__box">
                 <i className="bx bx-lock login__icon"></i>
-                <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="********"/>
+                <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="********" className="login__input"/>
               </div>
               <a href="#" className="login__forgot">Forgot password?</a>
               <button className="thisbutton" type="submit">

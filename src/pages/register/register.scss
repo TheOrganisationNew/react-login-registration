@@ -46,13 +46,6 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  color: var(--first-color-dark);
-}
 
 h1 {
   margin: 0;
@@ -200,7 +193,12 @@ img {
   color: var(--first-color-dark);
 }
 
-.register__signin,
+.register__signin{
+  border: none;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
 .register__signup {
   color: var(--first-color);
   cursor: pointer;
