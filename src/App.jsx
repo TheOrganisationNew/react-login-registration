@@ -14,6 +14,7 @@ import LeftBar from "./components/leftBar/LeftBar";
 import RightBar from "./components/rightBar/RightBar";
 import Profile from "./pages/profile/Profile";
 import Home from "./pages/home/Home";
+// import "./style.scss";
 
 function App() {
 
@@ -21,14 +22,14 @@ function App() {
 
   const Layout = ()=> {
     return (
-      <div>
-        <NavBar/>
-        <div style={{ display: "flex"}}>
-
-        <LeftBar/>
-        <Outlet/>
-        <RightBar/>
-
+      <div >
+        <NavBar />
+        <div style={{ display: "flex" }}>
+          <LeftBar />
+          <div style={{ flex: 6 }}>
+            <Outlet />
+          </div>
+          <RightBar />
         </div>
       </div>
     );

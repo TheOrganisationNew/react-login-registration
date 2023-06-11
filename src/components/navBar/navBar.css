@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+/* @import "../../style.scss"; */
+*{
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.navbar {
+    
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #a49eac;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+
+}
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .search{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border: 1px solid;
+        border-radius: 15px;
+
+    }
+
+    .logo{
+        width: 80px;
+        display: inline-block;
+        
+    }
+
+    .search input{
+        border: none;
+        border-radius: 15px;
+        padding: 5px;
+        width: 300px;
+        background-color: #f2f2f2;
+        outline: none;
+        
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .picture{
+      display: inline-flex;
+      align-items: center;
+      font-weight: 500;
+    }
+    .image{
+      border-radius: 50%;
+      object-fit: cover;
+      width: 30px;
+      height: 30px;
+      display: inline-flex;
+
+    }
+  

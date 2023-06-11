@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaUser, FaLock, FaEnvelope } from "react-icons/fa";
 import { MdEvent } from "react-icons/md";
 import imgSayit from "../../../img/img-sayit.svg";
-import "./register.scss";
+import "./register.css";
 
 export const Register = () => {
   const [username, setUsername] = useState("");
@@ -19,7 +19,7 @@ export const Register = () => {
     <div className="register">
       <div className="register__content">
         <div className="register__img">
-          <img src={imgSayit} alt="img-register.svg" />
+          <img src={imgSayit} alt="img-register.svg" className="img_register"/>
         </div>
         <div className="register__forms">
           <form action="" className="register__register" id="register-in" onSubmit={handleSubmit}>

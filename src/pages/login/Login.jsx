@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaLock, FaEnvelope, FaGoogle, FaFacebook } from "react-icons/fa";
 import imgSayit from "../../../img/img-sayit.svg";
-import "./login.scss";
+import "./login.css";
 
 export const Login = () => {
   const [email, setEmail] = useState("");
@@ -17,7 +17,7 @@ export const Login = () => {
     <div className="login">
       <div className="login__content">
         <div className="login__img">
-          <img src={imgSayit} alt="img-login.svg" />
+          <img src={imgSayit} alt="img-login.svg" className="img_login"/>
         </div>
         <div className="login__forms">
           <form action=""className="login__register" id="login-in" onSubmit={handleSubmit}>

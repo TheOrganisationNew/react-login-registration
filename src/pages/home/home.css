@@ -1,0 +1,13 @@
+.home{
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    display: flex;
+    width: 100%;
+    padding-left: 10%;
+    
+}
+.home::-webkit-scrollbar{
+    display: none;
+}
